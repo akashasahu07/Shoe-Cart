@@ -1,9 +1,11 @@
 header {
     display: flex;
-    background-color: #e0f9ff;
+    background-color: #d0fea2;
     justify-content: space-around;
     align-items: center;
     padding: 10px 0;
+    position: fixed;
+    width: 100vw;
 }
 
 .list-items ul {
@@ -34,7 +36,7 @@ img {
 
 .load {
     height: 2px;
-    background-color: #e0f9ff;
+    background-color: #d0fea2;
     animation: load 0.5s ease-in-out 1;
 }
 
