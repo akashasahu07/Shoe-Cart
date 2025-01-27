@@ -26,12 +26,15 @@ ul li a {
 
 ul li a:hover {
     text-decoration: underline;
-    color: #003c45;
+    color: #5e0145;
     text-shadow: 1px 1px 20px;
+    font-size: 1.04rem;
+    transition-delay: 0.13S;
 }
 
 img {
     mix-blend-mode: multiply;
+    width: 30px;
 }
 
 .load {
