@@ -12,13 +12,54 @@ header {
     list-style: none;
 }
 
-ul li a{
+ul li a {
     font-weight: bold;
     color: black;
     text-decoration: none;
 }
 
+.menu {
+    display: none;
+}
+
 ul li a:hover {
     text-decoration: underline;
-    color: #b300ff;
+    color: #003c45;
+    text-shadow: 1px 1px 20px;
+}
+
+img {
+    mix-blend-mode: multiply;
+}
+
+.load {
+    height: 2px;
+    background-color: #e0f9ff;
+    animation: load 0.5s ease-in-out 1;
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+
+    75% {
+        background-color: #ff0000;
+        width: 75vw;
+    }
+
+    99.8% {
+        width: 99.8vw;
+        background-color: #ff0000;
+    }
+}
+
+@media (max-width: 580px) {
+    .list-items ul {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
 }
