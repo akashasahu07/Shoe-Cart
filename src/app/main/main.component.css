@@ -1,0 +1,127 @@
+main {
+    background-color: #f6fadc;
+    padding: 20px 0;
+    height: fit-content;
+    margin-top: 70px; /* Adjust to match the header height */
+    position: relative; /* Ensure proper stacking */
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.search-bar input {
+    padding: 10px 10px 10px 20px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #dd93ff;
+    font-weight: bold;
+}
+
+.search-bar .btn-disabled {
+    cursor: not-allowed;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #dd93ff;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #a1ffd3;
+    transition-delay: 0.1s;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 1rem auto;
+    padding: 2rem;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.prod {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.prod:hover {
+    transform: translateY(-5px);
+}
+
+/* Product Image Style */
+.prod-image {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f9;
+    position: relative;
+}
+
+.prod-image img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+/* Product About Style */
+.about {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about h3 {
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.about h4 {
+    display: flex;
+    column-gap: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.cart-button img {
+    mix-blend-mode: multiply;
+}
+
+.cart-button {
+    display: flex;
+    align-items: center;
+    column-gap: 0.3rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    box-shadow: 1px 1px 5px #00c3ff;
+    background-color: #e7fbad;
+    width: fit-content;
+}
+
+.cart-button:hover {
+    background-color: #a9fb88;
+    transition-delay: 0.1s;
+    box-shadow: 1px 1px 10px;
+}

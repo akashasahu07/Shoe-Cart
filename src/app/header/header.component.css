@@ -4,8 +4,12 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 10px 0;
-    position: fixed;
+    position: fixed; /* Keep header fixed */
+    top: 0; /* Stick to the top */
     width: 100vw;
+    border-bottom: 3px solid purple;
+    z-index: 10; /* Ensure header stays above other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .list-items ul {

@@ -1,0 +1,27 @@
+<main>
+    <div class="search-bar">
+        <input type="text" placeholder="Search Something..." [(ngModel)]="searchText">
+        <button [ngClass]="{'btn': true, 'btn-disabled': !searchText}">Search</button>
+    </div>
+
+    <div class="container">
+        <div class="products">
+            <div class="prod" *ngFor="let item of products">
+                <div class="prod-image">
+                    <img src="{{ item.image }}">
+                </div>
+                <div class="about">
+                    <h3>{{ item.name }}</h3>
+                    <h4>
+                        <span [ngStyle]="{'color': 'black', 'text-decoration': 'none'}">&#8377; {{ item.price }}</span>
+
+                        <span [ngStyle]="{'color': '#666', 'text-decoration': 'line-through'}"> &#8377; {{ item.discount
+                            }}</span>
+                    </h4>
+
+                    <button class="cart-button"> <img src="cart.gif" alt="cart" width="25">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
