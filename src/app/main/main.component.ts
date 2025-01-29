@@ -10,6 +10,8 @@ import { FormsModule } from '@angular/forms';
 })
 export class MainComponent {
   searchText:string = ''
+  text:string = ''
+  count = 0
 
   products = [
     {
@@ -33,4 +35,12 @@ export class MainComponent {
       discount:  "6,999"
     }
   ]
+
+  searchButton() {
+    this.text = this.searchText
+  }
+
+  addToCart() {
+    this.count ++;
+  }
 }

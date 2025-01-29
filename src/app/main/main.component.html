@@ -1,10 +1,19 @@
 <main>
     <div class="search-bar">
         <input type="text" placeholder="Search Something..." [(ngModel)]="searchText">
-        <button [ngClass]="{'btn': true, 'btn-disabled': !searchText}">Search</button>
+        <button [ngClass]="{'btn': true, 'btn-disabled': !searchText}" (click)="searchButton()">Search</button>
     </div>
 
-    <div class="container">
+    <div class="search-text">
+        <h4 *ngIf="text!=''">Showing result for: {{ text }}</h4>
+    </div>
+
+    <div class="container" id="products">
+        <div class="cart">
+            <img src="cart.gif" alt="cart">
+            <p>{{ count }}</p>
+        </div>
+
         <div class="products">
             <div class="prod" *ngFor="let item of products">
                 <div class="prod-image">
@@ -19,7 +28,7 @@
                             }}</span>
                     </h4>
 
-                    <button class="cart-button"> <img src="cart.gif" alt="cart" width="25">Add to Cart</button>
+                    <button class="cart-button" (click)="addToCart()"> <img src="cart.gif" alt="cart" width="25">Add to Cart</button>
                 </div>
             </div>
         </div>

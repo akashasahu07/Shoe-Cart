@@ -2,8 +2,10 @@ main {
     background-color: #f6fadc;
     padding: 20px 0;
     height: fit-content;
-    margin-top: 70px; /* Adjust to match the header height */
-    position: relative; /* Ensure proper stacking */
+    margin-top: 60px;
+    /* Adjust to match the header height */
+    position: relative;
+    /* Ensure proper stacking */
 }
 
 .search-bar {
@@ -42,16 +44,40 @@ main {
     transition-delay: 0.1s;
 }
 
+.search-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.cart img {
+    width: 40px;
+    mix-blend-mode: multiply;
+}
+
+.cart {
+    display: flex;
+}
+
+.cart p {
+    position: relative;
+    top: -9px;
+    left: 5px;
+    color: #b700ff;
+    font-weight: bold;
+}
+
 .container {
     max-width: 1000px;
     margin: 1rem auto;
-    padding: 2rem;
+    padding: 0 2rem 2rem 2rem;
 }
 
 .products {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
+    margin-top: 1rem;
     justify-content: center;
 }
 
@@ -81,6 +107,7 @@ main {
     max-width: 100%;
     max-height: 100%;
     border-radius: 10px;
+    mix-blend-mode: multiply;
 }
 
 /* Product About Style */
