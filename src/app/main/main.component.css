@@ -41,7 +41,6 @@ main {
 
 .btn:hover {
     background-color: #a1ffd3;
-    transition-delay: 0.1s;
 }
 
 .search-text {
@@ -126,7 +125,6 @@ main {
 .about h4 {
     display: flex;
     column-gap: 1.5rem;
-    margin-bottom: 0.8rem;
 }
 
 .cart-button img {
@@ -137,7 +135,7 @@ main {
     display: flex;
     align-items: center;
     column-gap: 0.3rem;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
@@ -145,6 +143,22 @@ main {
     box-shadow: 1px 1px 5px #00c3ff;
     background-color: #e7fbad;
     width: fit-content;
+    margin-top: 0.8rem;
+}
+
+.about .cart-button-disabled {
+    display: flex;
+    align-items: center;
+    column-gap: 0.3rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: not-allowed;
+    font-weight: bold;
+    border: none;
+    box-shadow: 1px 1px 5px #00c3ff;
+    background-color: #e7fbad;
+    width: fit-content;
+    margin-top: 0.8rem;
 }
 
 .cart-button:hover {
