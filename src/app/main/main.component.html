@@ -15,7 +15,7 @@
         </div>
 
         <div class="products">
-            <div class="prod" *ngFor="let item of products">
+            <div class="prod" *ngFor="let item of products; let i = index">
                 <div class="prod-image">
                     <img src="{{ item.image }}">
                 </div>
@@ -37,7 +37,7 @@
                         </ng-template>
                     </span>
 
-                    <button class="cart-button" (click)="ButtonClick(item)"
+                    <button class="cart-button" (click)="ButtonClick(i)"
                         [ngClass]="{'cart-button': true, 'cart-button-disabled': !item.inStock}">
                         <img *ngIf="item.inStock" src="cart.gif" alt="cart" width="25">
                         {{ item.inStock ? 'Add to Cart' : 'Notify Me' }}

@@ -13,6 +13,9 @@ export class MainComponent {
   text: string = ''
   count = 0
 
+  // Track added products by index
+  addedProducts: boolean[] = [];
+
   // All Products List Here
   products = [
     {
@@ -46,19 +49,23 @@ export class MainComponent {
   }
 
   // This is for adding product to the Cart
-  ButtonClick(product: any) {
-    if (!product.inStock) {
+  ButtonClick(index: any) {
+    if (!this.products[index].inStock) {
       alert("Product is out of stock. You will be notified when it's Available.");
     }
+    else if (this.addedProducts[index]) {
+      alert("Product already Added.")
+    }
     else {
-      this.addToCart();
+      this.addToCart(index);
     }
   }
 
-  addToCart() {
+  addToCart(index:any) {
     const audio = new Audio('click.mp3') //This is for playing audio
     audio.play()
 
+    this.addedProducts[index] = true // Mark product as added
     this.count++;
 
   }
