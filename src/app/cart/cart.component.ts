@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './cart.component.css'
 })
 export class CartComponent {
+  // subTotal:number = 0
+  
   // All Products List Here
   addedProducts = [
     {
@@ -34,6 +36,10 @@ export class CartComponent {
       inStock: true
     }
   ]
+
+  get subTotal(): number {
+    return this.addedProducts.reduce((total, item) => total + item.price, 0);
+  }
 
   removeAll() {
       this.addedProducts = [];

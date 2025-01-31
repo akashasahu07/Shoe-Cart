@@ -10,6 +10,10 @@
             <img src="{{item.image}}" alt="product" width="100">
             <h5>{{ item.name }}</h5>
             <h5>&#8377; {{ item.price | number:'1.0-0' }}</h5>
+        </div><hr>
+
+        <div class="total">
+            <h5>Subtotal: &#8377; {{ subTotal | number:'1.0-0' }}</h5>
         </div>
     </div>
 </div>
