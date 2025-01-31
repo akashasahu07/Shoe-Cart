@@ -31,10 +31,15 @@
     grid-template-columns: repeat(3, auto);
     align-items: center;
     justify-content: space-between;
-    column-gap: 2rem;
+    column-gap: 1.5rem;
     background-color: #f9fbd5;
-    padding-right: 10px;
+    padding: 0 10px;
     border-radius: 5px;
+    box-shadow: 1px 1px 5px;
+}
+
+.cart-products img {
+    mix-blend-mode: multiply;
 }
 
 .cart hr {
@@ -44,4 +49,10 @@
 
 .total {
     text-align: right;
+}
+
+@media (max-width: 500px) {
+    .cart {
+        margin: 0 10px;
+    }
 }

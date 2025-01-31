@@ -49,10 +49,6 @@ main {
     margin-top: 15px;
 }
 
-.cart img {
-    width: 40px;
-}
-
 .cart {
     mix-blend-mode: multiply;
     display: flex;
