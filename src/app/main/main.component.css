@@ -51,11 +51,14 @@ main {
 
 .cart img {
     width: 40px;
-    mix-blend-mode: multiply;
 }
 
 .cart {
+    mix-blend-mode: multiply;
     display: flex;
+    position: sticky;
+    top: 90px;
+    z-index: 20;
 }
 
 .cart p {
