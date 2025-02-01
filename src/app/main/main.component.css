@@ -1,7 +1,8 @@
 main {
     background-color: #f6fadc;
     padding: 20px 0;
-    height: fit-content;
+    /* height: fit-content; */
+    min-height: 100vh;
     margin-top: 60px;
     /* Adjust to match the header height */
     position: relative;
