@@ -57,6 +57,10 @@ main {
     z-index: 20;
 }
 
+.cart img {
+    cursor: pointer;
+}
+
 .cart p {
     position: relative;
     top: -9px;

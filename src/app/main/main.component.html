@@ -5,7 +5,7 @@
     </div>
 
     <div class="search-text">
-        <h4 *ngIf="text!=''">Showing result for: {{ text }}</h4>
+        <h4 *ngIf="text!=''">Showing result for: "{{ text | titlecase }}"</h4> <!-- this is the built in pipe use to convert the search text into titlecase "Mobile Phone" like this and have 2 more lowercase and uppercase-->
     </div>
 
     <div class="container" id="products">
