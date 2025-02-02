@@ -1,16 +1,23 @@
 <div class="container">
     <div class="cart">
         <div class="first-section">
-            <h3>Flash | Shoe Cart</h3>
+            <h3>Shoe Cart</h3>
             <h5><a href="#" (click)="removeAll()">Remove All</a></h5>
         </div>
         <hr>
 
-        <div class="cart-products" *ngFor="let item of addedProducts">
-            <img src="{{item.image}}" alt="product" width="100">
-            <h5>{{ item.name }}</h5>
-            <h5>&#8377; {{ item.price | number:'1.0-0' }}</h5>
-        </div><hr>
+        <div class="show-products" *ngIf="addedProducts.length > 0; else empty">
+            <div class="cart-products" *ngFor="let item of addedProducts">
+                <img src="{{item.image}}" alt="product" width="80">
+                <h5>{{ item.name }}</h5>
+                <h5>&#8377; {{ item.price | number:'1.0-0' }}</h5>
+            </div>
+        </div>
+
+        <ng-template #empty>
+            <img src="empty_cart.gif" alt="">
+        </ng-template>
+        <hr>
 
         <div class="total">
             <h5>Subtotal: &#8377; {{ subTotal | number:'1.0-0' }}</h5>

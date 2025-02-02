@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { CartComponent } from '../cart/cart.component';
 
 @Component({
   selector: 'app-main',
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, CartComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })
@@ -12,6 +13,13 @@ export class MainComponent {
   searchText: string = ''
   text: string = ''
   count = 0
+
+  isCartVisible: boolean = false; // Flag to control cart visibility
+
+  // Method to toggle cart visibility
+  showCart() {
+    this.isCartVisible = !this.isCartVisible;
+  }
 
   // Track added products by index
   addedProducts: boolean[] = [];

@@ -5,13 +5,19 @@
     </div>
 
     <div class="search-text">
-        <h4 *ngIf="text!=''">Showing result for: "{{ text | titlecase }}"</h4> <!-- this is the built in pipe use to convert the search text into titlecase "Mobile Phone" like this and have 2 more lowercase and uppercase-->
+        <h4 *ngIf="text!=''">Showing result for: "{{ text | titlecase }}"</h4>
+        <!-- this is the built in pipe use to convert the search text into titlecase "Mobile Phone" like this and have 2 more lowercase and uppercase-->
     </div>
 
     <div class="container" id="products">
         <div class="cart">
-            <img src="cart.gif" alt="cart" width="40">
+            <img src="cart.gif" alt="cart" width="40" (click)="showCart()">
             <p>{{ count }}</p>
+        </div>
+
+        <div class="show-cart">
+            <!-- Conditionally render the cart component -->
+            <app-cart *ngIf="isCartVisible"></app-cart>
         </div>
 
         <div class="products">
