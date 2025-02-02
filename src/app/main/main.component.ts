@@ -27,7 +27,7 @@ export class MainComponent {
   // All Products List Here
   products = [
     {
-      image: "https://cdn.media.amplience.net/i/scvl/144406_308584_1?fmt=auto&w=640",
+      image: "image1.avif",
       name: "Men's New Balance 515 Sustainable Sneakers'",
       price: "6,200",
       discount: "8,999",
@@ -35,7 +35,7 @@ export class MainComponent {
     },
 
     {
-      image: "https://cdn.media.amplience.net/i/scvl/151851_341697_1?fmt=auto&w=640",
+      image: "image2.avif",
       name: "Women's New Balance ML408 Running Shoes",
       price: "4,099",
       discount: "4,999",
@@ -43,11 +43,35 @@ export class MainComponent {
     },
 
     {
-      image: "https://cdn.media.amplience.net/s/scvl/144779_359040_SET/1?fmt=auto&$webPdpProduct$",
+      image: "image3.avif",
       name: "Girls' New Balance Big Kid 515 Running Shoes",
       price: "6,099",
       discount: "6,999",
       inStock: true
+    },
+
+    {
+      image: "image4.webp",
+      name: "adidas Womens Response Running Shoe",
+      price: "5,799",
+      discount: "9,999",
+      inStock: true
+    },
+
+    {
+      image: "image5.jpg",
+      name: "Saucony Mens Axon 3 Running Shoe",
+      price: "5,790",
+      discount: "9,990",
+      inStock: true
+    },
+
+    {
+      image: "image6.jpg",
+      name: "Nike Men's Casual Shoes Air Max Sc-Photon",
+      price: "5,697",
+      discount: "5,995",
+      inStock: false
     }
   ]
 
