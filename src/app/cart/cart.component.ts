@@ -15,25 +15,19 @@ export class CartComponent {
     {
       image: "https://cdn.media.amplience.net/i/scvl/144406_308584_1?fmt=auto&w=640",
       name: "Men's New Balance 515 Sustainable Sneakers'",
-      price: 6200,
-      discount: "8,999",
-      inStock: true
+      price: 6200
     },
 
     {
       image: "https://cdn.media.amplience.net/i/scvl/151851_341697_1?fmt=auto&w=640",
       name: "Women's New Balance ML408 Running Shoes",
-      price: 4099,
-      discount: "4,999",
-      inStock: false
+      price: 4099
     },
 
     {
       image: "https://cdn.media.amplience.net/s/scvl/144779_359040_SET/1?fmt=auto&$webPdpProduct$",
       name: "Girls' New Balance Big Kid 515 Running Shoes",
-      price: 6099,
-      discount: "6,999",
-      inStock: true
+      price: 6099
     }
   ]
 
